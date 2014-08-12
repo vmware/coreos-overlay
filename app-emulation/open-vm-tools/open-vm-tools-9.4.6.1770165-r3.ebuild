@@ -109,4 +109,7 @@ src_install() {
 
 	# We never bother with i10n on CoreOS
 	rm -rf "${D}"/usr/share/open-vm-tools
+
+	systemd_dounit "${FILESDIR}"/vmtoolsd.service
+	systemd_enable_service multi-user.target vmtoolsd.service
 }
