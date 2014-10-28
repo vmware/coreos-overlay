@@ -38,7 +38,7 @@ S="${WORKDIR}/${MY_P}"
 PATCHES=(
 	"${FILESDIR}/${MY_P}-0001-configure-Add-options-for-fuse-and-hgfs.patch"
 	"${FILESDIR}/${MY_P}-0002-configure-Fix-USE_SLASH_PROC-conditional.patch"
-	"${FILESDIR}/${MY_P}-0003-scripts-Remove-ifup.patch"
+	"${FILESDIR}/${MY_P}-0003-scripts-network.patch"
 	"${FILESDIR}/${MY_P}-0004-rename-dnet-config.patch"
 	"${FILESDIR}/${MY_P}-0005-oliver-test.patch"
 )
