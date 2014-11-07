@@ -143,3 +143,8 @@ RDEPEND="${RDEPEND}
 	net-misc/iputils
 	dev-vcs/git
 	"
+
+src_install() {
+	mkdir -p ${D}/etc/ld.so.conf.d/ && echo "/usr/share/oem/lib64" > ${D}/etc/ld.so.conf.d/oem.conf
+}
+
